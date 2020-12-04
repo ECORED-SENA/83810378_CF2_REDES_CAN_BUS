@@ -1,0 +1,49 @@
+[
+  {
+    "icon": "fa fa-home",
+    "slug": "external",
+    "title": "Volver al inicio",
+    "path": "index.html"
+  },  
+  { 
+    "id": 1,
+    "icon": "fa fa-file-text",
+    "slug": "introduccion",
+    "title": "Introduccion",
+    "breadcrumb": ["Inicio","Introducción"],
+    "path": "pages/introduccion.html"     
+  },  
+  { 
+    "id": 1,
+    "icon": "fa fa-file-text",
+    "slug": "instrumentos",
+    "title": "1. Características de los instrumentos de medición",
+    "breadcrumb": ["Inicio","Tema 1"],
+    "path": "pages/1-tema.html"  
+  },
+  { 
+    "id": 1,
+    "icon": "fa fa-file-text",
+    "slug": "caracteristicas",
+    "title": "2. Características de los diagramas de red multiplexada",
+    "breadcrumb": ["Inicio","Tema 2"],
+    "path": "pages/2-tema.html"
+  },
+  { 
+    "id": 1,
+    "icon": "fa fa-file-text",
+    "slug": "diagramas",
+    "title": "3. Técnicas de interpretación de diagramas de cableado",
+    "breadcrumb": ["Inicio","Tema 3"],
+    "path": "pages/3-tema.html"
+  },
+  { 
+    "id": 1,
+    "icon": "fa fa-file-text",
+    "slug": "toma",
+    "title": "4.Técnicas de toma de señal",
+    "breadcrumb": ["Inicio","Tema 4"],
+    "path": "pages/4-tema.html"          
+    
+  }
+]

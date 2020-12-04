@@ -1,0 +1,98 @@
+.container
+    .header-ecored
+        h1 1. Características de los instrumentos de medición: 
+    .jumbotron.bg-white
+        h2 a. Multímetro
+        p Con este instrumento se miden las resistencias del circuito y realizando la medición en cada módulo se puede identificar su ubicación.
+
+        p Por seguridad siempre es aconsejable usar un multímetro con una impedancia al menos de 10MΩ.
+
+        .row.justify-content-center.mt-5
+            .col
+                h2 b. Equipo FSA 740
+                p Este equipo tiene altas prestaciones debido a la posibilidad de enlazarse con otros equipos de diagnóstico, de tal manera, que se convierte en un centro de diagnóstico para todo el vehículo.
+ 
+            .col-auto
+                img(src="assets/images/pages/tema_1/img_1.png").img-fluid
+
+        p.mt-5 La unidad de medición es donde se agrupan todos los cables para la toma de señales del equipo, además de transformarla para enviarla al computador y de esta manera se haga visible. 
+
+        img.mt-5.img-a(src="assets/images/pages/tema_1/img_2.png").img-fluid
+
+        p.mt-5 Se pueden ver los cables en la parte inferior y los símbolos de cada uno de ellos, dependiendo de la conexión que se realice.
+
+        p Este es un equipo analizador de motores y es por eso tantas funciones que trae y las ventajas de saber usarlo adecuadamente para aprovechar sus características.
+
+        p Las conexiones de izquierda a derecha son: sensor de temperatura, conexión de batería, primario sistema de encendido, pinzas de excitación, conexiones negativas de kV sistema de encendido, conexiones positivos kV sistema de encendido, pinzas amperimétricas de 30A y 1000ª, sondas de osciloscopio 1er y 2do canal, estroboscopio, medición de presión de aire, sonda presión de líquidos.
+
+        p En la siguiente imagen, se aprecian las conexiones desde la parte inferior de la unidad de medición.
+
+        img.mt-5.img-a(src="assets/images/pages/tema_1/img_3.png").img-fluid
+
+        p.mt-5 Cuando se inicia a trabajar con el equipo, como primera medida se realiza la identificación del vehículo que se va a intervenir.
+
+        img.mt-5.img-a(src="assets/images/pages/tema_1/img_4.png").img-fluid
+
+        p.mt-5 Se selecciona Estándar dentro de Identificación vehículo Y se despliegan las siguientes opciones
+
+        img.mt-5.img-a(src="assets/images/pages/tema_1/img_5.png").img-fluid
+
+        p.mt-5 En este punto se puede escoger el tipo de motor, número de cilindros, orden de encendido y el tipo de encendido.
+
+        .row.mt-5      
+            .col-12.col-md-6
+                .card.span-color_1
+                    .card-body
+                        p El equipo da 4 opciones en el tipo de encendido:
+
+        table.table.table-nowrap.justify-content-center.mt-5
+            thead
+                tr
+                    td.color-table_2 EFS con transmisor NW:
+                    td.span-color_2 Para sistemas de encendido con bobina individual por cilindro y sensor de árbol de levas.
+                tr
+                    td.color-table_2 EFS con transmisor KW: 
+                    td.span-color_2  para sistemas de encendido con bobina individual por cilindro y sensor de cigüeñal.   
+                tr
+                    td.color-table_2 DFS: 
+                    td.span-color_2 Para sistemas de encendido DIS.
+                tr
+                    td.color-table_2 ROV
+                    td.span-color_2 Para sistemas de encendido con distribuidor
+
+        .embed-responsive.embed-responsive-16by9
+              iframe.embed-responsive-item(width='560', height='315', src='https://www.youtube.com/embed/bv8zTM9mZZ8', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+
+        .row.mt-5      
+            .col-12.col-md-6
+                .card.span-color_1
+                    .card-body
+                        p El equipo cuenta con dos opciones para tomar las señales de CAN BUS.
+
+        p La primera es usando el osciloscopio universal. En esta opción, como cualquier otro osciloscopio, se hace ajuste de las variables para tener una señal que pueda ser interpretada por el técnico.
+
+        p En este caso se toma la señal en los pines 6 y 14 del conector de diagnóstico y dependiendo si la señal es de baja velocidad (CAN-LS) o alta velocidad (CAN-HS), se ajusta el tiempo.
+
+        ul.list-unstyled
+            li.justify-content-center
+                i.fa.fa-angle-right.fa-lg.mr-3.text-color-orange
+                | La amplitud se ajusta para ver una señal que se mueve entre 0 Volts y 5,0 Volts, y
+            li.justify-content-center
+                i.fa.fa-angle-right.fa-lg.mr-3.text-color-orange
+                | La otra es seleccionando Prueba de componentes y luego Cable de datos CAN.
+
+        p En este espacio, los ajustes para ver la señal se ajustan automáticamente, también se pueden hacer los ajustes de tiempo y amplitud.
+
+        img.mt-5.img-a(src="assets/images/pages/tema_1/img_6.png").img-fluid
+
+        img.mt-5.img-a(src="assets/images/pages/tema_1/img_7.png").img-fluid
+
+        p.mt-5 La señal queda muy bien definida. Se pueden hacer mediciones más precisas ajustando los cursores.
+
+        img.mt-5.img-a(src="assets/images/pages/tema_1/img_8.png").img-fluid
+
+        p.mt-5 Para la figura anterior, el tiempo entre los cursores registra el valor de 1,9µs. y desde 0 Volts la amplitud de la señal es de 3,61 Volts.
+            | #[br] Se ha tomado la señal de CAN BUS-HS de tracción.
+
+        .embed-responsive.embed-responsive-16by9
+              iframe.embed-responsive-item(width='560', height='315', src='https://www.youtube.com/embed/bv8zTM9mZZ8', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')

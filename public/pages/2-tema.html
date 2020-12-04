@@ -1,0 +1,57 @@
+<div class="container">
+    <div class="header-ecored">
+        <h1>2. Características de los diagramas de red multiplexada</h1>
+    </div>
+    <div class="jumbotron bg-white">
+        <p><strong>Se pueden encontrar varios tipos de disposiciones de CAN BUS.</strong></p>
+        <p>Es importante conocer que los únicos sistemas en el vehículo obligados a utilizar el protocolo son los de anticontaminación. Sin embargo, los fabricantes están libres de decidir incluir los demás sistemas del vehículo al uso del protocolo.</p>
+        <div class="row mt-5">
+            <div class="col-12 col-md-2">
+                <div class="card span-color_1">
+                    <div class="card-body">
+                        <p>Tipo A</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>Con este tipo de acomodo de redes, los fabricantes pueden integrar al vehículo CAN-HS y CAN-LS, usando los mismos pines de diagnóstico en el DLC sin importar sus diferentes velocidades de comunicación. </p>
+        <p>Esto se logra integrando una interfaz (Gateway) que permite pasar los mensajes entre alta y baja velocidad y viceversa.</p>
+        <p>El CAN de confort y el CAN de tracción no pueden ir a los mismos pines del conector de diagnóstico, ya que son señales con diferentes velocidades y por este motivo es que se implementa la interfaz.</p>
+        <p>Los fabricantes de vehículos alemanes son quienes, de manera especial, utilizan este tipo de conexión.</p>
+        <p>La ventaja de esta arquitectura es que el equipo de diagnóstico solo debe leer un tipo de comunicación y los pines adicionales al conector, son los de tierra y alimentación.</p>
+        <p>Por tal motivo, la complejidad del sistema se encuentra en el vehículo, porque requiere de un solo elemento para el diagnóstico del sistema. Así es que, el funcionamiento de todo el sistema depende del buen trabajo del Gateway (interfaz).</p>
+        <p>Por lo tanto, cuando se mide entre los pines 6 y 14, se medirá la electrónica de la Gateway y no tiene mucho sentido en el procedimiento del diagnóstico.</p>
+        <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/bv8zTM9mZZ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+        <p class="mt-5">Cuando se revisa un vehículo que sabemos que cuenta con CAN de tracción y CAN de confort y en el DLC solo usa pines 6 y 14 para el diagnóstico, lo más seguro es que está clasificado dentro de este tipo de red.</p><img class="mt-5 img-a img-fluid" src="assets/images/pages/tema_2/img_1.png" /><img class="mt-5 img-a img-fluid" src="assets/images/pages/tema_2/img_2.png" />
+        <p class="mt-5">Como se ve en la imagen, el módulo Gateway puede incluir el conector de diagnóstico</p><img class="mt-5 img-a img-fluid" src="assets/images/pages/tema_2/img_3.png" />
+        <div class="row mt-5">
+            <div class="col-12 col-md-2">
+                <div class="card span-color_1">
+                    <div class="card-body">
+                        <p>Tipo B</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>Este es otro tipo de conexión pero no incluye interfaz.</p>
+        <p>Son diferentes tipos de velocidades, por consiguiente, van a pines diferentes del DLC.</p>
+        <p>CAN-HS tracción va a los pines 6 y 14 pero los demás van a pines sin asignación del conector de diagnóstico, como el 1, 3, 8, 9, 11, 12 o 13.</p><img class="mt-5 img-a img-fluid" src="assets/images/pages/tema_2/img_4.png" />
+        <p class="mt-5">En el caso de este conector, en los pines 6 y 14 llevan una velocidad y los pines 3 y 11 otra velocidad.</p>
+        <p>Las líneas que llegan al conector de diagnóstico de la figura inferior son solamente representativas a modo de ejemplo y no está indicando específicamente el pin designado.</p>
+        <p>Para saber a qué pines están conectadas cada una de las líneas de CAN, se requiere el uso del manual.</p><img class="mt-5 img-a img-fluid" src="assets/images/pages/tema_2/img_5.png" />
+        <p class="mt-5">En este caso, el conector de diagnóstico si se puede utilizar como punto de medición.</p>
+        <p>El equipo que hace el diagnóstico requiere entonces, de la capacidad de leer en diferentes pines el tipo de mensajes con su velocidad correspondiente.</p>
+        <div class="row mt-5">
+            <div class="col-12 col-md-2">
+                <div class="card span-color_1">
+                    <div class="card-body">
+                        <p>Tipo C</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>Este tipo es una combinación de los dos anteriores.<br />Una red va directamente al DLC y la otra lo hace a través de la interfaz.</p><img class="mt-5 img-a img-fluid" src="assets/images/pages/tema_2/img_6.png" />
+        <p class="mt-5">En este caso, se puede diagnosticar directamente el CAN-HS de tracción, pero no lo puede hacer por el CAN-LS de confort ya que lo hace a través de la interfaz.</p>
+        <p>Otro tipo posible de conexión es que cuente con solo una señal CAN de tracción y no exista la de confort, de tal manera, que sea mucho más simple su diagnóstico.</p>
+    </div>
+</div>
